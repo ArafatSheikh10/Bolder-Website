@@ -1,0 +1,848 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1449px) {
+    
+
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+
+}
+
+
+
+
+
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    h1 {
+        font-size: 56px;
+        text-transform: uppercase;
+    }
+  
+    .hero_area {
+        padding: 250px 0 200px 0;
+    }
+
+    .history_area {
+        padding: 90px 0;
+    }
+
+    .history_area .common_card-wraper {
+        gap: 20px;
+    }
+
+    .history_area .common_card {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 22px;
+    }
+
+    .team_area {
+        padding: 90px 0 90px 0;
+    }
+
+    .testiomonial_area {
+        padding: 105px 0 100px 0;
+    }
+
+    .recent_work-area {
+        padding: 100px 0 100px 0;
+    }
+
+    .features_area {
+        padding: 95px 0;
+    }
+
+    .features_area-image {
+        display: none;
+    }
+
+    .features_area-content {
+        text-align: center;
+    }
+
+    .features_area-content .common_card-wraper {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 65px;
+    }
+
+    .features_area-content .common_card-wraper .common_card {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    .features_area-content .common_card-wraper .common_card .common_card-icon {
+        margin: auto;
+    }
+
+    .pricing_area {
+        padding: 100px 0 128px 0;
+    }
+
+    .pricing_wraper {
+        gap: 0 20px;
+    }
+
+    .pricing_class {
+        font-size: 15px;
+    }
+
+    .pricing_card-content h2 {
+        font-size: 50px;
+    }
+
+    .blog_area {
+        padding: 100px 0 100px 0;
+        background-color: #F7F7F7;
+    }
+
+    .company_info-left {
+        font-size: 38px;
+    }
+
+    .company_info-right h2 {
+        font-size: 50px;
+    }
+
+    .brand_area {
+        padding: 40px 0;
+    }
+
+    .brand_area-singal img {
+        max-width: 160px;
+    }
+
+    .location_area {
+        padding: 90px 0 60px 0;
+    }
+
+    .footer_item-wraper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 46px;
+    }
+
+    .footer_glary {
+        width: 54%;
+    }
+
+    .copyright_area {
+        padding: 30px 0;
+        background-color: #2A2A2A;
+        margin-top: 80px;
+    }
+
+}
+ 
+
+
+
+
+
+
+
+/* LG Device :992px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    h1 {
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+
+    .nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: rgb(0, 0, 0);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+    }
+
+    .nav.sticky .menu_trigger,
+    .nav.sticky .menu_dismess {
+        color: var(--white-color);
+    }
+
+    .nav_logo {
+        width: 110px;
+        height: 59px;
+    }
+
+    .portfolio_card {
+        width: 50% !important;
+        height: 350px;
+    }
+  
+    .hero_area {
+        padding: 180px 0 100px 0;
+    }
+
+    .hero_area-content p {
+        font-size: 18px;
+    }
+
+    .history_area {
+        padding: 90px 0;
+    }
+
+    .history_area-image {
+        height: 233px;
+    }
+
+    .history_area .common_card-wraper {
+        gap: 20px;
+    }
+
+    .history_area .common_card {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 22px;
+    }
+
+    .grow_area {
+        padding: 100px 0;
+    }
+
+    .team_area {
+        padding: 90px 0 90px 0;
+    }
+
+    .testiomonial_area {
+        padding: 85px 0 80px 0;
+    }
+
+    .testiomonial_wraper {
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .recent_work-area {
+        padding: 80px 0 80px 0;
+    }
+
+    .features_area {
+        padding: 95px 0;
+    }
+
+    .features_area-image {
+        display: none;
+    }
+
+    .features_area-content {
+        text-align: center;
+    }
+
+    .features_area-content .common_card-wraper {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 65px;
+    }
+
+    .features_area-content .common_card-wraper .common_card {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    .features_area-content .common_card-wraper .common_card .common_card-icon {
+        margin: auto;
+    }
+
+    .pricing_area {
+        padding: 80px 0 90px 0;
+    }
+
+    .pricing_wraper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .pricing_class {
+        font-size: 15px;
+    }
+
+    .pricing_card-content h2 {
+        font-size: 50px;
+    }
+
+    .blog_area {
+        padding: 80px 0;
+        background-color: #F7F7F7;
+    }
+
+    .blog_card-image {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .company_area {
+        padding: 70px 0 70px 0;
+    }
+
+    .company_info-left {
+        font-size: 38px;
+    }
+
+    .company_info-right h2 {
+        font-size: 50px;
+    }
+
+    .company_area-image{
+        display: none;
+    }
+
+    .brand_area {
+        padding: 40px 0;
+    }
+
+    .brand_area-singal img {
+        max-width: 160px;
+    }
+
+    .location_area {
+        padding: 70px 0 60px 0;
+    }
+
+    .footer_item-wraper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 46px;
+    }
+
+    .footer_glary {
+        width: 54%;
+    }
+
+    .copyright_area {
+        padding: 30px 0;
+        background-color: #2A2A2A;
+        margin-top: 80px;
+    }
+
+}
+
+
+
+
+
+/* SM Small Device :320px. */
+@media only screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 120%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .primary_btn {
+        padding: 10px 20px;
+    }
+
+    .secondry_btn {
+        padding: 10px 20px;
+    }
+
+    .section_title {
+        gap: 30px;
+    }
+
+    .nav_logo {
+        width: 95px;
+        height: 51px;
+    }
+
+    .nav_menu {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        background-color: #E74C3C;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        justify-content: flex-start;
+        z-index: 1000;
+        transition: right 0.3s ease;
+        padding-top: 80px;
+    }
+
+    .nav_menu.slide_menu{
+        right: 0;
+    }
+
+    .menu_trigger {
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .menu_dismess {
+        display: block !important;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .nav_menu li {
+        padding: 15px 20px;
+    }
+
+    .nav_menu li a {
+        color: var(--white-color) !important;
+        font-size: 16px;
+    }
+  
+    .hero_area {
+        padding: 150px 0 70px 0;
+        z-index: 1;
+    }
+
+    .hero_area::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2A2A2A;
+        opacity: .8;
+        z-index: -1;
+    }
+
+    .hero_area-content {
+        gap: 0;
+    }
+
+    .hero_area-content p {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .history_area {
+        padding: 60px 0;
+    }
+
+    .history_area-image {
+        max-width: 400px;
+        width: 100%;
+        height: 330px;
+        margin: auto;
+    }
+
+    .history_area-image_wraper{
+        padding-bottom: 50px;
+    }
+
+    .history_area .common_card-wraper {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .history_area .common_card {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 22px;
+    }
+
+    .common_card-icon {
+        margin: auto;
+    }
+
+    .common_card-content {
+        text-align: center;
+    }
+
+    .grow_area {
+        padding: 80px 0;
+        position: relative;
+    }
+
+    
+    .grow_area::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+        z-index: -1;
+    }
+
+    .grow_content h2 {
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    .team_area {
+        padding: 60px 0;
+    }
+
+    .team_card-wraper {
+        margin-top: 50px;
+    }
+
+    .team_card {
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .team_card-image_area {
+        height: 330px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .team_card-image img {
+        object-fit: cover;
+    }
+
+    .testiomonial_area {
+        padding: 65px 0 60px 0;
+    }
+
+    .testiomonial_wraper {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .recent_work-area {
+        padding: 60px 0 60px 0;
+    }
+
+    .porfolio_filter {
+        margin: 45px 0 45px 0;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        white-space: nowrap;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+        
+    .porfolio_filter::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    .porfolio_filter::-webkit-scrollbar
+    {
+        width: 4px;
+        height: 4px;
+    }
+
+    .porfolio_filter::-webkit-scrollbar-thumb
+    {
+        background-color: #E74C3C;
+    }
+
+
+
+    .porfolio_filter li {
+        padding: 8px 15px;
+        font-size: 11px;
+        margin-bottom: 10px !important;
+    }
+
+    .portfolio_card {
+        width: 100% !important;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio_card-image_area {
+        max-width: 450px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .portfolio_card-show .plus {
+        font-size: 35px;
+    }
+
+    .portfolio_card-show h3 {
+        font-size: 16px;
+    }
+
+    .portfolio_card-show p {
+        font-size: 11px;
+    }
+
+    .recent_work-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 52px;
+    }
+
+    /* Touch-friendly hover for mobile */
+    .portfolio_card:active .portfolio_card-show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .features_area {
+        padding: 60px 0;
+    }
+
+    .features_area-image {
+        display: none;
+    }
+
+    .features_area-content {
+        text-align: center;
+    }
+
+    .features_area-content  .common_card-wraper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .features_area-content .common_card-wraper .common_card {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    .features_area-content .common_card-wraper .common_card .common_card-icon {
+        margin: auto;
+    }
+
+    .pricing_area {
+        padding: 60px 0 70px 0;
+    }
+
+    .pricing_wraper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .pricing_card {
+        max-width: 400px;
+        width: 100%;
+        min-height: 440px;
+        margin: auto;
+    }
+
+    .pricing_class {
+        font-size: 12px;
+    }
+
+    .pricing_card-content h2 {
+        font-size: 40px;
+    }
+
+    .blog_area {
+        padding: 60px 0;
+        background-color: #F7F7F7;
+    }
+
+    .blog_card-image {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .blog_post-info span {
+        width: 70px;
+        height: 70px;
+    }
+
+    .blog_card-content h3 {
+        font-size: 15px;
+    }
+
+    .blog_card-wraper .owl-dots {
+        margin-top: 25px;
+    }
+
+    .company_area {
+        padding: 60px 0;
+    }
+
+    .company_area-content {
+        text-align: center;
+    }
+
+    .company_info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .company_info-left {
+        font-size: 26px;
+    }
+
+    .company_info-right h2 {
+        font-size: 30px;
+    }
+
+    .company_info-right p {
+        font-size: 11px;
+    }
+
+    .company_area-image{
+        display: none;
+    }
+
+    .brand_area {
+        padding: 40px 0;
+    }
+
+    .brand_area-singal img {
+        max-width: 120px;
+    }
+
+    .location_area {
+        padding: 60px 0 60px 0;
+    }
+
+    .location_logo {
+        width: 88px;
+        height: 45px;
+    }
+
+    .footer_area {
+        padding: 60px 0 0 0;
+    }
+
+    .footer_item-wraper {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
+
+    .footer_glary {
+        width: 55%;
+    }
+
+    .letest_news-image {
+        width: 80px;
+        flex-shrink: 0;
+    }
+
+    .copyright_area {
+        padding: 20px 0;
+        background-color: #2A2A2A;
+        margin-top: 80px;
+    }
+
+    .footer_navigation-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .footer_copyright-text {
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .history_area .common_card-wraper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .history_area .common_card {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 22px;
+        justify-content: center;
+    }
+
+    .history_area-image {
+        height: 233px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .portfolio_card {
+        width: 50% !important;
+        margin-bottom: 0;
+    }
+    
+    .team_card-image_area {
+        width: 100%;
+        height: 330px;
+        margin: auto;
+    }
+
+    .porfolio_filter::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: none;
+        background-color: transparent;
+        display: none;
+    }
+
+    .porfolio_filter::-webkit-scrollbar
+    {
+        width: 0;
+        height: 0;
+    }
+
+    .porfolio_filter::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+    .portfolio_card-image_area {
+        width: 100%;
+        margin: auto;
+    }
+
+    .pricing_wraper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .company_info-wraper {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer_glary {
+        width: 45%;
+    }
+
+    .footer_navigation-menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .letest_news-image {
+        width: 100px;
+        flex-shrink: 0;
+    }
+    
+}
