@@ -1,60 +1,54 @@
 $(document).ready(function() {
 
-    //===== Sticky Menu-Bar Start
-    $(window).on('scroll', function(event) {
-    
-        var scroll = $(window).scrollTop();
-    
-        var windowWidth = $(window).width();
-            if (windowWidth > 768) { 
-            
-            if (scroll < 100) {
-                $("nav").removeClass("sticky");
-            } else {
-                $("nav").addClass("sticky");
-            }
-            
-        } else {
-            $("nav").removeClass("sticky");
+    // ====== Menu Id Select Start
+    $('.nav-menu a[href^="#"], .hero__scroll-icon[href^="#"], .bottom-menu__bar a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this.hash);
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 70 
+            }, 800);
         }
     });
-    //===== Sticky Menu-Bar End
+    // ====== Menu Id Select End
+
+    // ===== Body smooth Scroll Start
+    const body = document.body,
+      jsScroll = document.getElementsByClassName('js-scroll')[0],
+      speed = 0.05;
+
+    let height = jsScroll.getBoundingClientRect().height;
+    let offset = 0;
 
 
+    body.style.height = Math.floor(height) + "px";
 
-
-    //==== Nav Menu Slider Start
-
-    $('.menu_trigger').click(function(){
-        $('.nav_menu').addClass('slide_menu');
-    })
-
-    $('.menu_dismess').click(function(){
-        $('.nav_menu').removeClass('slide_menu');
-    })
-
-    //==== Nav Menu Slider End
-
-
-
-    // const body = document.body,
-    //   jsScroll = document.getElementsByClassName('js-scroll')[0],
-    //   height = jsScroll.getBoundingClientRect().height - 1,
-    //   speed = 0.05
-
-    // var offset = 0
-
-    // body.style.height = Math.floor(height) + "px"
-
-    // function smoothScroll() {
-    //     offset += (window.pageYOffset - offset) * speed
+    function smoothScroll() {
+        offset += (window.pageYOffset - offset) * speed;
         
-    //     var scroll = "translateY(-" + offset + "px) translateZ(0)"
-    //     jsScroll.style.transform = scroll
+        jsScroll.style.transform = `translateY(-${offset}px) translateZ(0)`;
         
-    //     raf = requestAnimationFrame(smoothScroll)
-    // }
-    // smoothScroll()
+        requestAnimationFrame(smoothScroll);
+    }
+
+    window.addEventListener('resize', () => {
+        height = jsScroll.getBoundingClientRect().height;
+        body.style.height = Math.floor(height) + "px";
+    });
+
+    smoothScroll();
+    // ===== Body smooth Scroll End
+
+
+
+
+
+    // ==== Aos Start
+
+    AOS.init();
+
+    // ==== Aos End
+
 
 });
 
