@@ -218,6 +218,7 @@ p {
     background-color: var(--white-color);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 100%;
+    transition: var(--transition);
 }
 
 .bottom-menu__bar li a svg{
@@ -229,6 +230,11 @@ p {
 .bottom-menu__bar li:nth-child(3) svg{
     width: 22px;
 }
+
+.bottom-menu__bar li a:hover{
+    transform: scale(1.1);
+}
+
 
 /*----------- Header Area End-------------- */
 
@@ -727,7 +733,7 @@ p {
 /* ------------Footer Area Start------------- */
 
 .footer-area{
-    padding: 224px 0 30px;
+    padding: 224px 0 130px;
     background-color: var(--primary-color);
 }
 
@@ -765,3 +771,6 @@ p {
 
 
 
+.bottom-menu__bar {
+    overflow: visible !important; /* যাতে টুলটিপ বাইরে আসতে পারে */
+}

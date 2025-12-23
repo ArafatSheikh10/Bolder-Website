@@ -1,5 +1,5 @@
 /* XL Device :1200px. */
-@media (min-width: 1200px) and (max-width: 1449px) {
+@media (min-width: 1300px) and (max-width: 1449px) {
     
 
 }
@@ -9,6 +9,95 @@
 
 @media (min-width: 1200px) and (max-width: 1300px) {
 
+    .hero-area h1 {
+        font-size: 260px;
+    }
+
+    h2 {
+        font-size: 260px;
+    }
+
+    h3 {
+        font-size: 86px;
+    }
+
+    h4 {
+        font-size: 90px;
+    }
+
+    h5 {
+        font-size: 32px;
+    }
+
+    .nav-menu li a {
+        font-size: 58px;
+    }
+
+    .hero-area__right h5 {
+        width: 300px;
+    }
+
+    .project-start__text {
+        font-size: 70px;
+    }
+
+    .project-start__text::before {
+        height: 12px;
+    }
+
+    .project-start__text::after {
+        height: 12px;
+    }
+
+    .hero__scroll-icon {
+        font-size: 141px;
+        margin-top: 25px !important;
+    }
+
+    .hyper-realistic-girl {
+        object-fit: contain;
+    }
+
+    .work-box {
+        height: 700px;
+    }
+
+    .about-area__bottom {
+        margin-top: 136px;
+    }
+
+    .robot-image {
+        width: 328px;
+        height: 330px;
+    }
+
+    .testiomonial-bottom {
+        margin-top: 110px;
+    }
+
+    .testiomonial-bottom__singal-text {
+        height: 237px;
+    }
+
+    .testiomonial-right__bold-text {
+        font-size: 55px;
+    }
+
+    .testiomonial-right__normal-text {
+        font-size: 33px;
+    }
+
+    .message-text {
+        margin: 100px 0 120px;
+    }
+
+    .footer-area {
+        padding: 100px 0 30px;
+    }
+
+    .footer-link, .copyright-year, .back-to-top {
+        font-size: 32px;
+    }
 
 }
 
@@ -17,7 +106,101 @@
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    
+    .hero-area h1 {
+        font-size: 240px;
+    }
+
+    h2 {
+        font-size: 240px;
+    }
+
+    h3 {
+        font-size: 90px;
+    }
+
+    h4 {
+        font-size: 80px;
+    }
+
+    h5 {
+        font-size: 28px;
+    }
+
+    .nav-menu li a {
+        font-size: 55px;
+    }
+
+    .hero-area__right h5 {
+        width: 282px;
+    }
+
+    .project-start__text {
+        font-size: 60px;
+    }
+
+    .project-start__text::before {
+        height: 10px;
+    }
+
+    .project-start__text::after {
+        height: 13px;
+    }
+
+    .hero__scroll-icon {
+        font-size: 121px;
+        margin-top: 25px !important;
+    }
+
+    .hyper-realistic-girl {
+        object-fit: contain;
+    }
+
+    .work-box {
+        height: 600px;
+    }
+
+    .about-area__bottom {
+        margin-top: 136px;
+    }
+
+    .robot-image {
+        width: 328px;
+        height: 330px;
+    }
+
+    .testiomonial-bottom {
+        margin-top: 110px;
+    }
+
+    .testiomonial-image {
+        width: 300px;
+        height: 305px;
+    }
+
+    .testiomonial-bottom__singal-text {
+        height: 237px;
+    }
+
+    .testiomonial-right__bold-text {
+        font-size: 50px;
+    }
+
+    .testiomonial-right__normal-text {
+        font-size: 31px;
+    }
+
+    .message-text {
+        margin: 100px 0 120px;
+    }
+
+    .footer-area {
+        padding: 100px 0 30px;
+    }
+
+    .footer-link, .copyright-year, .back-to-top {
+        font-size: 32px;
+    }
+
 
 }
  
@@ -27,6 +210,140 @@
 /* LG Device :992px. */
 @media (min-width: 768px) and (max-width: 991px) {
 
+    .hero-area h1 {
+        font-size: 185px;
+    }
+
+    h2 {
+        font-size: 185px;
+    }
+
+    h3 {
+        font-size: 72px;
+    }
+
+    h4 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 28px;
+    }
+
+    .nav-menu li a {
+        font-size: 55px;
+    }
+
+    .hero-area {
+        padding-top: 200px;
+    }
+
+    .project-start__text {
+        margin: 68px 0 60px;
+    }
+
+    .hero-area__right h5 {
+        width: 232px;
+    }
+
+    .project-start__text {
+        font-size: 60px;
+    }
+
+    .project-start__text::before {
+        height: 10px;
+    }
+
+    .project-start__text::after {
+        height: 13px;
+    }
+
+    .hero__scroll-icon {
+        font-size: 121px;
+        margin-top: 25px !important;
+    }
+
+    .hyper-realistic-girl {
+        width: 100%;
+        height: 95%;
+        object-fit: contain;
+    }
+
+    .work-box {
+        height: 500px;
+    }
+
+    .work-box__content {
+        padding: 30px;
+    }
+
+    .work-box__content span {
+        font-size: 18px;
+    }
+
+    .work-box__content p {
+        width: 100%;
+    }
+
+    .section_tag {
+        font-size: 40px;
+    }
+
+    .about-area__bottom {
+        margin-top: 100px;
+    }
+
+    .robot-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-descriptions {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .testiomonial-bottom {
+        margin-top: 110px;
+    }
+
+    .testiomonial-image {
+        width: 290px;
+        height: 280px;
+    }
+
+    .testiomonial-bottom__singal-text {
+        height: 237px;
+    }
+
+    .testiomonial-right__normal-text {
+        font-size: 31px;
+    }
+
+    .testiomonial-right__bold-text {
+        width: 100%;
+    }
+
+    .testiomonial-right__bold-text {
+        font-size: 42px;
+    }
+
+    .message-text {
+        margin: 72px 0 100px;
+    }
+
+    .footer-area {
+        padding: 70px 0 30px;
+    }
+
+    .forty-saven {
+        height: auto;
+    }
+
+    .footer-link, .copyright-year, .back-to-top {
+        font-size: 32px;
+    }
     
 }
 
@@ -37,7 +354,238 @@
 /* SM Small Device :320px. */
 @media only screen and (max-width: 767px) {
 
-    
+    .hero-area h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .nav-menu li a {
+        font-size: 24px;
+    }
+
+    .hero-area {
+        padding-top: 130px;
+    }
+
+    .hero-area__left {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .hero-area .hero-area__left .aos-animate:first-child {
+        position: relative !important;
+        z-index: 1 !important;
+    }
+
+    .project-start__text {
+        margin: 22px 0 30px;
+    }
+
+    .hero-area__right {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .hero-area__right h5 {
+        width: 100%;
+    }
+
+    .project-start__text {
+        font-size: 35px;
+    }
+
+    .project-start__text::before {
+        height: 8px;
+    }
+
+    .project-start__text::after {
+        height: 13px;
+    }
+
+    .hero__scroll-icon {
+        position: absolute;
+        left: 2%;
+        bottom: 7%;
+        font-size: 45px;
+        margin-top: 25px !important;
+    }
+
+    .hyper-realistic-girl {
+        width: 100%;
+        height: 95%;
+        object-fit: contain;
+        display: none;
+    }
+
+    .work-box {
+        height: fit-content;
+        grid-template-columns: 1fr;
+    }
+
+    .work-box__content {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .work-box__content h4 br{
+        display: none;
+    }
+
+    .work-box__content span {
+        font-size: 16px;
+    }
+
+    .work-box__content p {
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .work-box__image {
+        width: 100%;
+        height: 225px;
+    }
+
+    .section_tag {
+        font-size: 40px;
+    }
+
+    .about-area__bottom {
+        margin-top: 60px;
+    }
+
+    .robot-image {
+        width: 100%;
+        height: 255px;
+    }
+
+    .about-descriptions {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .about-singal__description--1 {
+        margin-top: 0;
+    }
+
+    .text-word-animation {
+        font-size: 20px;
+    }
+
+    .the-great__text {
+        font-size: 46px;
+    }
+
+    .the-great__text br{
+        display: none;
+    }
+
+    .testiomonial-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .testiomonial-bottom__singal-text {
+        height: 237px;
+    }
+
+    .testiomonial-right__normal-text {
+        font-size: 31px;
+    }
+
+    .testiomonial-right__bold-text {
+        width: 100%;
+        font-size: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .testiomonial-bottom {
+        margin-top: 50px;
+    }
+
+    .testiomonial-bottom__singal-text {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        height: auto;
+    }
+
+    .testiomonial-bottom__singal-text span {
+        font-size: 16px;
+    }
+
+    .testiomonial-bottom__singal-text span br{
+        display: none;
+    }
+
+    .testiomonial-right__normal-text {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .testiomonial-right__normal-text span{
+        display: none;
+    }
+
+    .brand-area {
+        padding: 60px 0;
+    }
+
+    .message-text {
+        margin: 44px 0 60px;
+    }
+
+    .message-text span, .message-text a {
+        font-size: 24px;
+    }
+
+    .social-links li a {
+        font-size: 26px;
+    }
+
+    .social-image {
+        margin-top: 30px;
+    }
+
+    .social-area hr {
+        margin-top: 40px;
+    }
+
+    .footer-area {
+        padding: 70px 0 30px;
+    }
+
+    .forty-saven {
+        height: auto;
+    }
+
+    .copyright-area {
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+
+    .footer-link, .copyright-year, .back-to-top {
+        font-size: 16px;
+    }
 
 
 }
