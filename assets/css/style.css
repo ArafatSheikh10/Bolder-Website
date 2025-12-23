@@ -170,12 +170,18 @@ p {
 }
 
 .nav-menu li a{
+    display: inline-block;
     color: var(--primary-color);
     font-size: 64px;
     font-family: var(--font-primary-bold);
     line-height: 100%;
     text-decoration: none;
     text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.nav-menu li a:hover{
+    transform: translateY(-15px);
 }
 
 .bottom-menu__bar {
