@@ -91,8 +91,9 @@
         margin: 100px 0 120px;
     }
 
-    .footer-area {
-        padding: 100px 0 30px;
+    .footer-area{
+        padding: 224px 0 120px;
+        background-color: var(--primary-color);
     }
 
     .footer-link, .copyright-year, .back-to-top {
@@ -193,8 +194,9 @@
         margin: 100px 0 120px;
     }
 
-    .footer-area {
-        padding: 100px 0 30px;
+    .footer-area{
+        padding: 224px 0 130px;
+        background-color: var(--primary-color);
     }
 
     .footer-link, .copyright-year, .back-to-top {
@@ -289,6 +291,11 @@
         font-size: 40px;
     }
 
+    .service-icon {
+        width: 200px;
+        height: 200px;
+    }
+
     .about-area__bottom {
         margin-top: 100px;
     }
@@ -333,8 +340,9 @@
         margin: 72px 0 100px;
     }
 
-    .footer-area {
-        padding: 70px 0 30px;
+    .footer-area{
+        padding: 224px 0 100px;
+        background-color: var(--primary-color);
     }
 
     .forty-saven {
@@ -465,6 +473,11 @@
         font-size: 40px;
     }
 
+    .service-icon {
+        width: 100px;
+        height: 100px;
+    }
+
     .about-area__bottom {
         margin-top: 60px;
     }
@@ -570,8 +583,9 @@
         margin-top: 40px;
     }
 
-    .footer-area {
-        padding: 70px 0 30px;
+    .footer-area{
+        padding: 224px 0 90px;
+        background-color: var(--primary-color);
     }
 
     .forty-saven {
@@ -579,7 +593,7 @@
     }
 
     .copyright-area {
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
     }
 
@@ -595,6 +609,10 @@
 /* SM Small Device :550px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
+
+    h2 {
+        font-size: 120px;
+    }
     
     
 }
