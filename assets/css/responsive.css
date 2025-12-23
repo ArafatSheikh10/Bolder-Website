@@ -92,7 +92,7 @@
     }
 
     .footer-area{
-        padding: 224px 0 120px;
+        padding: 224px 0 160px;
         background-color: var(--primary-color);
     }
 
@@ -191,11 +191,11 @@
     }
 
     .message-text {
-        margin: 100px 0 120px;
+        margin: 100px 0 150px;
     }
 
     .footer-area{
-        padding: 224px 0 130px;
+        padding: 120px 0 130px;
         background-color: var(--primary-color);
     }
 
@@ -341,7 +341,7 @@
     }
 
     .footer-area{
-        padding: 224px 0 100px;
+        padding: 20px 0 140px;
         background-color: var(--primary-color);
     }
 
@@ -583,8 +583,8 @@
         margin-top: 40px;
     }
 
-    .footer-area{
-        padding: 224px 0 90px;
+    .footer-area {
+        padding: 120px 0 152px;
         background-color: var(--primary-color);
     }
 
