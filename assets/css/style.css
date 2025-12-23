@@ -20,6 +20,7 @@ body{
     width: 100%;
     height: auto;
     will-change: transform; 
+    z-index: 10;
 }
 
 .container{
@@ -118,6 +119,7 @@ h4 {
 h5{
     font-size: 30px;
     font-family: var(--font-secondary-bold);
+    line-height: 100%;
 }
 
 p {
@@ -127,6 +129,22 @@ p {
     font-family: var(--font-secondary-regular);
     margin: 0;
     padding: 0;
+}
+
+.animation-text-right {
+    perspective: 1000px; 
+}
+
+.animation-text-left, .animation-text-right, 
+.animation-text-top, .animation-text-bottom, 
+.text-word-animation {
+    overflow: hidden;
+    display: block;
+}
+
+.line {
+    overflow: hidden; 
+    display: block;
 }
 
 /*--------- Header Area Start---------- */
@@ -163,14 +181,23 @@ p {
 .bottom-menu__bar {
     position: fixed;
     left: 50%;
+    top: 90vh;
     transform: translateX(-50%);
     max-width: 350px;
     width: 90%;
     background-color: var(--white-color);
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
     border-radius: 50px;
-    z-index: 9999;
+    z-index: 999;
     padding: 10px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.bottom-menu__bar.sticky{
+    opacity: 1;
+    visibility: visible;
 }
 
 .bottom-menu__bar ul{
@@ -675,7 +702,7 @@ p {
     font-size: 36px;
     font-family: var(--font-secondary-bold);
     text-decoration: none;
-    list-style: 80%;
+    line-height: 80%;
 }
 
 .social-image{
@@ -732,6 +759,8 @@ p {
 }
 
 /* ------------Footer Area End------------- */
+
+
 
 
 

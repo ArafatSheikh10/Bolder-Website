@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+
+    //===== Sticky Menu-Bar Start
+
+    window.onscroll = function() {stickyNavbar()};
+
+    var navbar = document.querySelector(".bottom-menu__bar");
+    
+    var stickyPoint = 100;
+    
+    function stickyNavbar() {
+      if (window.pageYOffset >= stickyPoint) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    
+    //===== Sticky Menu-Bar End
+
+
     // ====== Menu Id Select Start
     $('.nav-menu a[href^="#"], .hero__scroll-icon[href^="#"], .bottom-menu__bar a[href^="#"]').on('click', function(e) {
         e.preventDefault();
@@ -11,6 +31,10 @@ $(document).ready(function() {
         }
     });
     // ====== Menu Id Select End
+
+
+
+
 
     // ===== Body smooth Scroll Start
     const body = document.body,
@@ -50,7 +74,15 @@ $(document).ready(function() {
     // ==== Aos End
 
 
+    $(".tooltip").lyltip({
+        // options here
+      });
+
+
 });
+
+
+
 
     // ======= Service Name Start
 
@@ -78,3 +110,57 @@ $(document).ready(function() {
     });
 
     // ======= Service Name End
+
+
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let allSplits = [];
+
+    function initAnimations() {
+        allSplits.forEach(s => s && s.revert());
+        allSplits = [];
+
+        // --- Character Animations (Left, Right, Top, Bottom) ---
+        const config = [
+            { class: '.animation-text-left', from: { x: -70, opacity: 0 } },
+            { class: '.animation-text-right', from: { x: 70, opacity: 0 } },
+            { class: '.animation-text-top', from: { y: -70, opacity: 0 } },
+            { class: '.animation-text-bottom', from: { y: 70, opacity: 0 } }
+        ];
+
+        config.forEach(item => {
+            document.querySelectorAll(item.class).forEach(el => {
+                const split = new SplitType(el, { types: 'chars' });
+                allSplits.push(split);
+                
+                gsap.from(split.chars, {
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 90%",
+                        toggleActions: "play none none none"
+                    },
+                    ...item.from,
+                    duration: 0.8,
+                    ease: "power4.out",
+                    stagger: 0.03
+                });
+            });
+        });
+
+    }
+
+    document.fonts.ready.then(() => {
+        initAnimations();
+    });
+
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(initAnimations, 250);
+    });
+
+
+    
