@@ -443,7 +443,8 @@
 
     .work-box {
         height: fit-content;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .work-box__content {

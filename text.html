@@ -3,171 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive 3D Icon Reveal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-main: #000000;
-            --text-bg: #f0f0f0;
-            --transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        }
+    <title>jQuery Tooltipster Plugin</title>
 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
+
+    <style>
         body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
+            height: 100vh;
+            background-color: #f4f7f6;
         }
 
-        .services-container {
-            text-align: center;
-        }
-
-        .service-item {
-            position: relative;
-            margin: 20px 0;
+        .btn-tooltip {
+            padding: 12px 24px;
+            background-color: #E74C3C;
+            color: white;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
         }
 
-        /* মেইন টেক্সট স্টাইল */
-        .service-text {
-            font-size: 80px;
-            font-weight: 900;
-            text-transform: uppercase;
-            color: var(--text-bg);
-            transition: var(--transition);
-            margin: 0;
-            line-height: 1;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* হোভার করলে টেক্সট কালো হবে */
-        .service-item:hover .service-text {
-            color: var(--text-main);
-        }
-
-        /* ৩ডি আইকন স্টাইল */
-        .hover-icon {
-            position: absolute;
-            width: 120px; /* আইকনের সাইজ */
-            height: auto;
-            pointer-events: none;
-            opacity: 0;
-            visibility: hidden;
-            transform: translate(-50%, -50%) scale(0.5);
-            transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            z-index: 10;
-            filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
-        }
-
-        /* হোভার করলে আইকন দেখা যাবে */
-        .service-item:hover .hover-icon {
-            opacity: 1;
-            visibility: visible;
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        .service-label {
-            font-size: 12px;
-            letter-spacing: 2px;
-            color: #888;
-            margin-bottom: 40px;
-            display: block;
+        .btn-tooltip:hover {
+            background-color: #c0392b;
         }
     </style>
 </head>
 <body>
 
-    <div class="services-container">
-        <span class="service-label">OUR SERVICES</span>
+    <button class="btn-tooltip" title="Hello! I am a professional Tooltip.">Hover Me</button>
 
-        <div class="service-item">
-            <h2 class="service-text">WORDPRESS</h2>
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" class="hover-icon" alt="WordPress">
-        </div>
-
-        <div class="service-item">
-            <h2 class="service-text">WEBFLOW</h2>
-            <img src="https://cdn.worldvectorlogo.com/logos/webflow.svg" class="hover-icon" alt="Webflow">
-        </div>
-
-        <div class="service-item">
-            <h2 class="service-text">AUTOMATION</h2>
-            <img src="https://cdn-icons-png.flaticon.com/512/3242/3242257.png" class="hover-icon" alt="Automation">
-        </div>
-
-        <div class="service-item">
-            <h2 class="service-text">UX DESIGN</h2>
-            <img src="https://cdn-icons-png.flaticon.com/512/5202/5202980.png" class="hover-icon" alt="UX Design">
-        </div>
-    </div>
-
-
-    <div class="slideMenu">
-        <div class="close_x">
-            <i class="fal fa-times"></i>
-        </div>
-        <ul>
-            <li class="expanded">
-                <a class="active" href="#">HOME PAGE</a>
-            </li>
-            <li class="expanded">
-                <a href="#">ABOUT US</a>
-            </li>
-            <li class="expanded">
-                <a href="#">PRODUCTS <i class="far fa-angle-down"></i></a>
-                <ul>
-                    <li><a href="">Our plugins</a></li>
-                    <li><a href="">Our Themes</a></li>
-                    <li><a href="">Ebay themes</a></li>
-                    <li><a href="">HTML/css</a></li>
-                    <li><a href="">ui designs</a></li>
-                </ul>
-            </li>
-            <li class="expanded">
-                <a href="#">REFERENCE </a>
-            </li>
-            <li class="expanded">
-                <a href="#">CONTACT US</a>
-            </li>
-        </ul>
-    </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/js/tooltipster.bundle.min.js"></script>
 
     <script>
-        const serviceItems = document.querySelectorAll('.service-item');
-
-        serviceItems.forEach(item => {
-            const icon = item.querySelector('.hover-icon');
-
-            item.addEventListener('mousemove', (e) => {
-                // মাউসের পজিশন অনুযায়ী আইকন মুভ করা
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-
-                // আইকনটিকে মাউসের সেন্টারে রাখা
-                icon.style.left = `${x}px`;
-                icon.style.top = `${y}px`;
-                
-                // হালকা ৩ডি টিল্ট ইফেক্ট (Optional)
-                const rotateX = (y - rect.height / 2) / 10;
-                const rotateY = (x - rect.width / 2) / 10;
-                icon.style.transform = `translate(-50%, -50%) scale(1.1) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-            });
-
-            item.addEventListener('mouseleave', () => {
-                icon.style.transform = `translate(-50%, -50%) scale(0.5)`;
+        $(document).ready(function() {
+            // প্লাগইন ইনিশিয়ালাইজেশন
+            $('.btn-tooltip').tooltipster({
+                theme: 'tooltipster-shadow', // থিম সেট করা
+                animation: 'grow',           // অ্যানিমেশন (fade, grow, swing, slide, fall)
+                delay: 200,                  // দেখানোর সময় (milliseconds)
+                side: 'top',                 // কোন দিকে দেখাবে (top, bottom, right, left)
+                distance: 10                 // বাটন থেকে দূরত্ব
             });
         });
     </script>
+
 </body>
 </html>
