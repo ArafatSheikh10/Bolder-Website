@@ -73,10 +73,17 @@ $(document).ready(function() {
 
     // ==== Aos End
 
+    // ==== Mobail Bar Tooltip Start
+    $('.link-tooltip').tooltipster({
+        theme: 'tooltipster-shadow', 
+        animation: 'grow',           
+        delay: 200,                  
+        side: 'top',                 
+        distance: 10                 
+    });
+    // ==== Mobail Bar Tooltip End
 
-    $(".tooltip").lyltip({
-        // options here
-      });
+    
 
 
 });

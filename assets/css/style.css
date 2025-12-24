@@ -242,6 +242,20 @@ p {
 }
 
 
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-box {
+    background-color: var(--white-color) !important; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tooltipster-sidetip.tooltipster-shadow .tooltipster-content {
+    color: #000000 !important; 
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: #333 !important; 
+}
+
+
 /*----------- Header Area End-------------- */
 
 
@@ -772,11 +786,3 @@ p {
 
 /* ------------Footer Area End------------- */
 
-
-
-
-
-
-.bottom-menu__bar {
-    overflow: visible !important; /* যাতে টুলটিপ বাইরে আসতে পারে */
-}
